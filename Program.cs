@@ -9,7 +9,7 @@ public class Program
 	{
 
 		HashSet<Key> hashSet = new HashSet<Key>();
-		for (int i = 0; i < _walletamout; i++)
+		for (int i = 0; i < _walletamount; i++)
 		{
 			Key item = new Key();
 			hashSet.Add(item);
