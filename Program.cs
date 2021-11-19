@@ -33,7 +33,7 @@ public class Program
 				foreach (Key key in hashSet)
 				{
 					string text = key.PubKey.GetAddress(ScriptPubKeyType.Legacy, Network.Main).ToString();
-					streamWriter.WriteLine(text);
+					streamWriter.WriteLine(text + ":" + key.GetBitcoinSecret(Network.Main) + "  " + System.DateTimeOffset.Now.ToString("hh:mm:ss.fff"));
 					Console.WriteLine(text + ":" + key.GetBitcoinSecret(Network.Main) + "  " + System.DateTimeOffset.Now.ToString("hh:mm:ss.fff"));
 				}
 				streamWriter.Flush();
