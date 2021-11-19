@@ -3,7 +3,7 @@
 public class Program
 {
 
-	public static int _walletamount = 100000;
+	public static int _walletamount = 1000000;
 
 	public static void Main()
 	{
